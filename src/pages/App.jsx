@@ -1,12 +1,8 @@
-import './App.css'
+import '../App.css'
 
-import logo from "./images/logo.svg"
+import logo from "../images/logo.svg"
 
-
-import Game from "./pages/game.jsx"
-
-
-import { Routes, Route, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function App() {
 
@@ -18,14 +14,6 @@ function App() {
           <img src={logo} />
           <NavLink to="/game"><button> 시작하기 </button></NavLink>
       </div>
-
-
-
-
-      <Routes>
-        <Route path="/game" element={<Game />}></Route>
-      </Routes>
-
     </div> 
 
   )
