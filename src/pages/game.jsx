@@ -41,7 +41,7 @@ function Game() {
                     value={name} 
                     onChange={(event) => setName(event.target.value)} 
                 />
-                <button onClick={getinfo}>find me</button>
+                <button onClick={getinfo}>안장자 찾기</button>
             </div>
         </div>
     );
