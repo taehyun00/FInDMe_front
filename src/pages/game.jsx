@@ -17,11 +17,11 @@ function Game() {
     
         try {
             const response = await fetch(url + queryParams);
-            const text = await response.text(); // 응답 내용을 텍스트로 확인
+            const text = await response.text(); 
             console.log('Response Text:', text);
     
             if (response.ok) {
-                const data = JSON.parse(text); // JSON으로 파싱
+                const data = JSON.parse(text); 
                 console.log('Response:', data);
             } else {
                 console.error('Error:', response.statusText);
