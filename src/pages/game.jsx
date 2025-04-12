@@ -24,7 +24,7 @@ function Game() {
                 const data = JSON.parse(text); 
                 console.log('Response:', data);
             } else {
-                console.error('Error:', response.statusText);
+                console.error('Error:', response.statusText); //요청 가긴하는데 자꾸 에러남
             }
         } catch (error) {
             console.error('Fetch Error:', error);
